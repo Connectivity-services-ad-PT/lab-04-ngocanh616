@@ -537,7 +537,7 @@ components:
               example: 40.0
             unit:
               type: [string, 'null']
-              enum: [celsius, percent, boolean, ppm, null]
+              enum: [celsius, percent, boolean, ppm]
               minLength: 1
               maxLength: 20
               description: Đơn vị đo dùng để diễn giải value và threshold, gửi khi Provider có dữ liệu
@@ -547,7 +547,7 @@ components:
               format: date-time
             severity:
               type: [string, 'null']
-              enum: [LOW, MEDIUM, HIGH, CRITICAL, null]
+              enum: [LOW, MEDIUM, HIGH, CRITICAL]
               example: HIGH
             locationId:
               type: [string, 'null']
@@ -688,7 +688,7 @@ components:
           description: Thời điểm cập nhật status theo ISO 8601 UTC
         previousStatus:
           type: [string, 'null']
-          enum: [online, offline, maintenance, null]
+          enum: [online, offline, maintenance]
           example: null
         reason:
           type: [string, 'null']
