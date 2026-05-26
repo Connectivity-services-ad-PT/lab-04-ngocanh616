@@ -7,8 +7,8 @@ Tài liệu này giúp người khác clone repo sạch và chạy lại service
 ## 1. Clone repo
 
 ```bash
-git clone <repo-url>
-cd FIT4110_lab04_docker_packaging
+git clone https://github.com/Connectivity-services-ad-PT/lab-04-ngocanh616.git
+cd lab-04-ngocanh616
 ```
 
 ---
@@ -44,6 +44,8 @@ Mở terminal khác, kiểm tra:
 ```bash
 curl http://localhost:8000/health
 ```
+
+*Lưu ý cho người dùng Windows PowerShell:* Thay `curl` bằng `curl.exe` hoặc `Invoke-RestMethod http://localhost:8000/health` để tránh cảnh báo bảo mật script.
 
 Kết quả mong đợi:
 
